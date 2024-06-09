@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "b14ca027-c178-49fb-ae26-ea0765e3fa46",
+		"name": "MOVIE-RECOMENDATION-SYSTEM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29595217",
+		"_collection_link": "https://grey-comet-816986.postman.co/workspace/Move-recomendation-system-Works~e744a79e-719f-419a-bc2c-ab70c11bcb95/collection/29595217-b14ca027-c178-49fb-ae26-ea0765e3fa46?action=share&source=collection_link&creator=29595217"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/movies/genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Horror-comedy-thriller\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/genre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"genre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/movies/createmovies",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"Alien\",\r\n      \"description\": \"After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.\",\r\n      \"releaseDate\": \"1979-05-25\",\r\n      \"genres\": [\"Horror\", \"Sci-Fi\"]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/createmovies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"createmovies"
+					]
+				},
+				"description": "This Route handler is used to create movies."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/movies/getallmovies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/getallmovies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"getallmovies"
+					]
+				},
+				"description": "This Route is about getting all the movies ."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/movies/genrefiltering/Action",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/genrefiltering/Action",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"genrefiltering",
+						"Action"
+					]
+				},
+				"description": "This Route is used for filtering movies based on genre"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/movies/movierating/1\n",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rating\": 4,\r\n  \"comment\": \"Enjoyed the movie!\",\r\n  \"movieId\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/movies/movierating/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"movierating",
+						"1\n"
+					]
+				},
+				"description": "This Route is used for providing the rating of the movie"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/movies/sortedbyrating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/movies/sortedbyrating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"movies",
+						"sortedbyrating"
+					]
+				},
+				"description": "Movies are sorted by rating here ."
+			},
+			"response": []
+		}
+	]
+}
