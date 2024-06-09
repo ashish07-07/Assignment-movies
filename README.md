@@ -1,12 +1,8 @@
-
 # Project Title: Next.js Movie Recommendation System
-
 
 Description:
 
 This project is a movie recommendation system built using Next.js. It leverages Prisma for database management and provides a simple user authentication system.Users can rate movies and provide feedback, contributing to the overall rating. Additionally, they can filter and view movies based on specific genres or sort movies by user ratings to discover popular and highly-rated films
-
-
 
 ## Installation
 
@@ -19,11 +15,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-
 1. **Creating a Next project:**
 
-```bash
-     
+````bash
+
      npx create-next-app@latest
     ```
 
@@ -36,7 +31,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
    git clone https://github.com/your-username/your-repo.git
 
     ```
-  
+
  Change into the project directory:
 
     ```bash
@@ -62,7 +57,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
     ```
     Create a simple user schema
-model 
+model
      ```bash
 
 model User {
@@ -93,7 +88,7 @@ Replace .env with your own Postgres URL
     ```
 
 
-   
+
 ## Starting the server
 
 
@@ -123,3 +118,7 @@ To run the server locally, follow these steps:
     This command will execute the the application, launching your application.
 
 4. Once the server is running, you should see a message indicating that the server is listening on a specific port, often `http://localhost:3000`.
+
+5. All The API routes for the application is present inside the api directory
+ app/api/movies
+````
